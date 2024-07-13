@@ -23,6 +23,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(cors({origin:' * ',credentials:true}));
 app.use(morgan('dev'))
 
+
 app.use('/public', express.static('public'));
 
 

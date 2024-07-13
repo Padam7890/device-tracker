@@ -22,7 +22,8 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use((0, cors_1.default)({ origin: ' * ', credentials: true }));
 app.use((0, morgan_1.default)('dev'));
-app.use('/public', express_1.default.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
+
 console.log("file" + __dirname, "public");
 (0, mainRoute_js_1.default)(app);
 app.use(error_js_1.errorMiddleware);

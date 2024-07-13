@@ -4,7 +4,8 @@
      "description": "",
      "main": "./dist/src/app.js",
      "scripts": {
-          "dev": "nodemon index.ts",
+          "start":"nodemon index.js",
+          "dev": "nodemon index.js",
           "build": "tsc",
           "ts.check": "tsc --project tsconfig.json",
           "add-build": "git add dist",

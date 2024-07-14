@@ -58,6 +58,7 @@ io.on('connection', (socket) => {
   socket.on("send-device-status", (data) => {
     io.emit("receive-device-status", { id: socket.id, ...data });
   });
+  
 });
 
 server.listen(port, () => console.log('Server is working on Port:' + port + ' in ' + envMode + ' Mode.'));
